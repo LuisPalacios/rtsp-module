@@ -15,9 +15,9 @@ Aquí tienes la versión del programa y el parche documentado en dicho artículo
     # tar xvfz rtsp-module-3.7-v2.tar.gz
     # rm rtsp-module-3.7-v2.tar.gz
 
-#### ___PATCH___
-    Copia/Pega desde pastebin el parche: http://pastebin.com/4QZ2r7eV 
-    Crea un fichero por ejempo en: /tmp/rtsp-3.7-v2.patch
+#### ___PATCH___ 
+
+Descarga el fichero [rtsp-3.7-v2.patch](https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2.patch)
 
     # patch < /tmp/rtsp-3.7-v2.patch
 
