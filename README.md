@@ -3,14 +3,16 @@
 [Movistar TV: Video bajo demanda con router Linux](http://www.luispa.com/?p=378)
 
 
-Aquí tienes la versión del programa y el parche documentado en dicho artículo: 
+Dejo aquí un fork de los ficheros descritos en dicho apunte: 
 
 
 #### ___DESCARGA___
+
+Descarga el fichero [rtsp-module-3.7-v2.tar.gz](https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-module-3.7-v2.tar.gz)
     
     # mkdir /tmp/rtsp
     # cd /tmp/rtsp
-    # wget http://mike.it-loops.com/rtsp/rtsp-module-3.7-v2.tar.gz
+    # wget https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-module-3.7-v2.tar.gz
     : 
     # tar xvfz rtsp-module-3.7-v2.tar.gz
     # rm rtsp-module-3.7-v2.tar.gz
@@ -19,6 +21,7 @@ Aquí tienes la versión del programa y el parche documentado en dicho artículo
 
 Descarga el fichero [rtsp-3.7-v2.patch](https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2.patch)
 
+    # wget https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2.patch
     # patch < /tmp/rtsp-3.7-v2.patch
 
 #### ___COMPILA___
