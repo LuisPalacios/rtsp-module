@@ -24,6 +24,14 @@ Descarga el fichero [rtsp-3.7-v2.patch](https://raw.githubusercontent.com/LuisPa
     # wget https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2.patch
     # patch < /tmp/rtsp-3.7-v2.patch
 
+#### ___PATCH___ (a continuación)
+
+Descarga el fichero [rtsp-3.7-v2-range2.patch](https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2-range2.patch)
+
+    # wget https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2-range2.patch
+    # patch < /tmp/rtsp-3.7-v2-range2.patch
+
+
 #### ___COMPILA___
     # make debug
     :
