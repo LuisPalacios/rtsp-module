@@ -1,0 +1,11 @@
+--- rtsp-3.7-v2_patch/nf_nat_rtsp.c	2014-01-26 21:57:26.000000000 +0100
++++ rtsp-3.7-v2_nf_nat_range2/nf_nat_rtsp.c	2019-05-23 11:33:59.563968910 +0200
+@@ -535,7 +535,7 @@
+ static void nf_nat_rtsp_expected(struct nf_conn* ct, struct nf_conntrack_expect *exp)
+ {
+ #if LINUX_VERSION_CODE < KERNEL_VERSION(3,3,0) || LINUX_VERSION_CODE >= KERNEL_VERSION(3,7,0)
+-	struct nf_nat_range range;
++	struct nf_nat_range2 range;
+ #else
+ 	struct nf_nat_ipv4_range range;
+ #endif
