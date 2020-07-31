@@ -1,0 +1,21 @@
+--- o/nf_conntrack_rtsp.c	2020-07-31 11:31:44.612408677 +0200
++++ n/nf_conntrack_rtsp.c	2020-07-31 11:41:16.086161708 +0200
+@@ -396,8 +396,8 @@
+ 					  &expinfo, rtp_exp, rtcp_exp);
+ #endif
+ 		else {
+-			if (nf_ct_expect_related(rtp_exp) == 0) {
+-				if (rtcp_exp && nf_ct_expect_related(rtcp_exp) != 0) {
++		  if (nf_ct_expect_related(rtp_exp, 0) == 0) {
++		    if (rtcp_exp && nf_ct_expect_related(rtcp_exp, 0) != 0) {
+ 					nf_ct_unexpect_related(rtp_exp);
+ 					pr_info("nf_conntrack_expect_related failed for rtcp\n");
+ 					ret = NF_DROP;
+@@ -472,6 +472,7 @@
+ #endif
+ 
+ 	switch (CTINFO2DIR(ctinfo)) {
++	case IP_CT_DIR_MAX:
+ 	case IP_CT_DIR_ORIGINAL:
+ #if LINUX_VERSION_CODE >= KERNEL_VERSION(3,7,0)
+ 		ret = help_out(skb, rb_ptr, datalen, ct, ctinfo, protoff);
