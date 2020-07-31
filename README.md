@@ -33,10 +33,12 @@ Descarga los ficheros .patch y aplícalos en orden...
 
 
 #### ___COMPILA___
+
     # make
     :
 
 #### Opcional, si quieres hacer debug... 
+
     # make debug
     :
 
