@@ -19,20 +19,24 @@ Descarga el fichero [rtsp-module-3.7-v2.tar.gz](https://raw.githubusercontent.co
 
 #### ___PATCH___ 
 
-Descarga el fichero [rtsp-3.7-v2.patch](https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2.patch)
+Descarga los ficheros .patch y aplícalos en orden... 
 
     # wget https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2.patch
-    # patch < /tmp/rtsp-3.7-v2.patch
-
-#### ___PATCH___ (a continuación)
-
-Descarga el fichero [rtsp-3.7-v2-range2.patch](https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2-range2.patch)
-
     # wget https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2-range2.patch
+    # wget https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2-nuevo.patch
+    # wget https://raw.githubusercontent.com/LuisPalacios/rtsp-module/master/rtsp-3.7-v2-nuevo2.patch
+
+    # patch < /tmp/rtsp-3.7-v2.patch
     # patch < /tmp/rtsp-3.7-v2-range2.patch
+    # patch < /tmp/rtsp-3.7-v2-nuevo.patch
+    # patch < /tmp/rtsp-3.7-v2-nuevo2.patch
 
 
 #### ___COMPILA___
+    # make
+    :
+
+#### Opcional, si quieres hacer debug... 
     # make debug
     :
 
