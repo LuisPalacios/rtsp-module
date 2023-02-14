@@ -1,6 +1,6 @@
 
 
-[Movistar TV: Video bajo demanda con router Linux](http://www.luispa.com/?p=378)
+[Movistar TV: Video bajo demanda con router Linux](https://www.luispa.com/linux/2014/10/05/router-linux.html)
 
 
 Dejo aquí un fork de los ficheros descritos en dicho apunte: 
